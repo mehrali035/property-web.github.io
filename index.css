@@ -1,0 +1,926 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Poppins:wght@700&family=Work+Sans:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+        "sidebar nav nav nav"
+        "sidebar main main main";
+}
+
+/*============================================ navbar=========================================== */
+nav {
+    background: #FFFFFF;
+    grid-area: nav;
+    height: 3rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul>img {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.search {
+    width: 12rem;
+    height: 1.6rem;
+    border-radius: 0.3rem;
+    background: #EDF2F7;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    position: relative;
+}
+
+.search img {
+    padding-left: 0.5rem;
+}
+
+.search p {
+    font-size: 0.8rem;
+    padding-bottom: 0rem;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 2rem;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list img {
+    clip-path: circle();
+    margin-top: 0.4rem;
+    margin-right: 0.3rem;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: #1A202C;
+}
+
+main {
+    background: #E5E5E5;
+    grid-area: main;
+    height: 100vh;
+}
+
+/*============================================ main section ================================= */
+.main {
+    background: #E5E5E5;
+}
+
+.text {
+    line-height: 1.7rem;
+}
+
+.text h1 {
+    font-size: 1rem;
+    color: #1A202C;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.text p {
+    font-size: 0.6rem;
+    color: #718096;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 1.1rem;
+}
+
+.cards img {
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.wcard1 {
+    position: absolute;
+    width: 15rem;
+    height: 6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    top: 18rem;
+    left: 25rem;
+}
+
+.wcard1 p {
+    font-size: 0.6rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #718096;
+}
+
+.wcard1 h2 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #1A202C;
+}
+
+.wcard1 img {
+    padding-left: 0.3rem;
+}
+
+.wcard1 span {
+    font-size: 0.6rem;
+    color: #718096;
+}
+
+.wcard2 {
+    position: absolute;
+    width: 15rem;
+    height: 6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    top: 18rem;
+    left: 45.5rem;
+}
+
+.wcard2 p {
+    font-size: 0.6rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #718096;
+}
+
+.wcard2 h2 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #1A202C;
+}
+
+.wcard2 img {
+    padding-left: 0.3rem;
+}
+
+.wcard2 span {
+    font-size: 0.6rem;
+    color: #718096;
+}
+
+.wcard3 {
+    position: absolute;
+    width: 15rem;
+    height: 6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    top: 18rem;
+    left: 66.4rem;
+}
+
+.wcard3 p {
+    font-size: 0.6rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #718096;
+}
+
+.wcard3 h2 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #1A202C;
+}
+
+.wcard3 img {
+    padding-left: 0.3rem;
+}
+
+.wcard3 span {
+    font-size: 0.6rem;
+    color: #718096;
+}
+
+.wcard4 {
+    position: absolute;
+    width: 15rem;
+    height: 6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    top: 42rem;
+    left: 25rem;
+}
+
+.wcard4 p {
+    font-size: 0.6rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #718096;
+}
+
+.wcard4 h2 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #1A202C;
+}
+
+.wcard4 img {
+    padding-left: 0.3rem;
+}
+
+.wcard4 span {
+    font-size: 0.6rem;
+    color: #718096;
+}
+
+.wcard5 {
+    position: absolute;
+    width: 15rem;
+    height: 6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    top: 42rem;
+    left: 45.5rem;
+}
+
+.wcard5 p {
+    font-size: 0.6rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #718096;
+}
+
+.wcard5 h2 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #1A202C;
+}
+
+.wcard5 img {
+    padding-left: 0.3rem;
+}
+
+.wcard5 span {
+    font-size: 0.6rem;
+    color: #718096;
+}
+
+.wcard6 {
+    position: absolute;
+    width: 15rem;
+    height: 6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    top: 42rem;
+    left: 66.4rem;
+}
+
+.wcard6 p {
+    font-size: 0.6rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #718096;
+}
+
+.wcard6 h2 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #1A202C;
+}
+
+.wcard6 img {
+    padding-left: 0.3rem;
+}
+
+.wcard6 span {
+    font-size: 0.6rem;
+    color: #718096;
+}
+
+
+
+
+
+
+
+
+
+/* ==============================================sidebar ================================== */
+.sidebar {
+    background: #2D3748;
+    grid-area: sidebar;
+}
+
+.sidebar img {
+    padding: 1rem 0 0 2rem;
+}
+
+.rectangles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rectangles .one {
+    position: absolute;
+    left: 2rem;
+    top: 5rem;
+    color: #A0AEC0;
+    font-size: 1rem;
+}
+
+.rectangles .two {
+    position: absolute;
+    left: 10.5rem;
+    top: 5rem;
+    color: #A0AEC0;
+}
+
+.rect1 img {
+    color: #E5E5E5;
+}
+
+.rect2 img {
+    color: #E5E5E5;
+    padding-bottom: 0.1rem;
+}
+
+.rect1 {
+    position: relative;
+    width: 5rem;
+    height: 2rem;
+    color: #E5E5E5;
+    margin: 4rem 0 0 2rem;
+    border-radius: 0.2rem;
+    background: #4A5568;
+    padding: 0.1rem 0 0 0.2rem;
+
+}
+
+.rect2 {
+    position: relative;
+    width: 5rem;
+    height: 2rem;
+    color: #E5E5E5;
+    margin: 4rem 0 0 2rem;
+    border-radius: 0.2rem;
+    background: #4A5568;
+    padding: 0.1rem 0 0 0.2rem;
+    right: 6rem;
+}
+
+.rectangles .three {
+    position: absolute;
+    left: 2.2rem;
+    top: 11rem;
+    color: #A0AEC0;
+}
+
+.rect3 {
+    position: relative;
+    width: 12rem;
+    height: 2rem;
+    color: #E5E5E5;
+    margin: 4rem 0 0.4rem 2rem;
+    border-radius: 0.2rem;
+    background: #4A5568;
+    padding: 0.1rem 0 0 0.2rem;
+
+}
+
+.rect3 p {
+    color: #E5E5E5;
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
+}
+
+/* ==========================sidebar part 2 ================================= */
+.box2 {
+    padding-bottom: 1.5rem;
+}
+
+.box2 p {
+    color: #A0AEC0;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.box2 input {
+    color: #1A202C;
+    margin-left: 2rem;
+}
+
+.box2 span {
+    color: #E5E5E5;
+    padding-left: 0.6rem;
+    gap: 1rem;
+}
+
+/* ================================sidebar part 3================================================ */
+.box3 {
+    padding-bottom: 1.5rem;
+}
+
+.box3 p {
+    color: #A0AEC0;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.box3 input {
+    color: #E5E5E5;
+    margin-left: 2rem;
+}
+
+.box3 span {
+    color: #E5E5E5;
+    padding-left: 0.6rem;
+    gap: 1rem;
+}
+
+/* ========================= sidebar button ===================== */
+.btn {
+    width: 11rem;
+    height: 2rem;
+    color: #E5E5E5;
+    background: #667EEA;
+    border-radius: 0.2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=================================== Media Querries ============================= */
+@media (max-width:1050px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-template-areas:
+            "nav"
+            "sidebar"
+            "main";
+    }
+
+    .sidebar {
+        display: flex;
+    }
+
+    .sidebar img {
+        display: none;
+    }
+
+    .rectangles {
+        grid-template-columns: 1fr 0.5fr;
+
+    }
+
+    .box2 input {
+        margin-left: 1rem;
+    }
+
+    .box2 {
+        padding-right: 2rem;
+    }
+
+    .box3 {
+        padding-right: 2rem;
+    }
+
+    .box3 input {
+        margin-left: 1rem;
+    }
+
+    .btn {
+        margin-top: 5rem;
+    }
+
+    .wcard1 {
+        left: 2.8rem;
+        top: 31rem;
+    }
+
+    .wcard2 {
+        top: 31rem;
+        left: 24rem;
+    }
+
+    .wcard3 {
+        top: 31rem;
+        left: 45rem;
+    }
+
+    .wcard4 {
+        top: 56rem;
+        left: 3rem;
+    }
+
+    .wcard5 {
+        top: 56rem;
+        left: 24rem;
+    }
+
+    .wcard6 {
+        top: 56rem;
+        left: 45rem
+    }
+
+    ul>img {
+        display: block;
+    }
+
+    nav {
+        background: #1A202C;
+    }
+
+    nav ul li a {
+        color: #E5E5E5;
+    }
+
+}
+
+@media (max-width:800px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-template-areas:
+            "nav"
+            "sidebar"
+            "main";
+    }
+
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 14rem;
+    }
+
+    .sidebar {
+        display: flex;
+        width: 50rem;
+    }
+
+    .sidebar img {
+        display: none;
+    }
+
+    .rectangles {
+        grid-template-columns: 1fr 0.5fr;
+        width: 16rem;
+
+    }
+
+    .box2 input {
+        margin-left: 1rem;
+    }
+
+    .box2 {
+        padding-right: 0rem;
+    }
+
+    .box2 p {
+        padding-left: 1rem;
+    }
+
+    .box3 {
+        padding-right: 2rem;
+    }
+
+    .box3 input {
+        margin-left: 1rem;
+    }
+
+    .btn {
+        margin-top: 5rem;
+    }
+
+    .wcard1 {
+        left: 2.8rem;
+        top: 28rem;
+        width: 11rem;
+        height: 7rem;
+    }
+
+    .wcard2 {
+        top: 28rem;
+        left: 20rem;
+        width: 11rem;
+        height: 7rem;
+    }
+
+    .wcard3 {
+        top: 28rem;
+        left: 36rem;
+        width: 11rem;
+        height: 7rem;
+    }
+
+    .wcard4 {
+        top: 50rem;
+        left: 3rem;
+        width: 11rem;
+        height: 7rem;
+    }
+
+    .wcard5 {
+        top: 50rem;
+        left: 20rem;
+        width: 11rem;
+        height: 7rem;
+    }
+
+    .wcard6 {
+        top: 50rem;
+        left: 36rem;
+        width: 11rem;
+        height: 7rem;
+    }
+
+    ul>img {
+        display: block;
+        width: 7rem;
+    }
+
+    nav {
+        background: #1A202C;
+    }
+
+    nav ul li a {
+        color: #E5E5E5;
+    }
+
+    .cimg1 img {
+        width: 13rem;
+        height: 10rem;
+    }
+
+    .cimg2 img {
+        width: 13rem;
+        height: 10rem;
+        margin-left: -2rem;
+    }
+
+    .cimg3 img {
+        width: 13rem;
+        height: 10rem;
+        margin-left: -4rem;
+    }
+
+}
+
+@media(max-width:600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-template-areas:
+            "nav"
+            "sidebar"
+            "main";
+    }
+
+    nav {
+        height: 7rem;
+    }
+
+    ul img {
+        margin-top: -2rem;
+    }
+
+    .search {
+        margin-left: -9rem;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+    }
+
+    .list {
+        margin-right: 7rem;
+    }
+
+    .list.show {
+        display: block;
+    }
+
+    .list img {
+        display: none;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        padding-right: 34rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wcard1 {
+        top: 63rem;
+    }
+
+    .wcard2 {
+        top: 63rem;
+    }
+
+    .cimg2 img {
+        margin-left: -7rem;
+    }
+
+    .wcard3 {
+        top: 78rem;
+        left: 3rem;
+    }
+
+    .cimg3 img {
+        margin-left: 0rem;
+        top: 2rem;
+    }
+
+    .wcard4 {
+        top: 97rem;
+    }
+
+    .wcard5 {
+        top: 96rem;
+    }
+
+    .wcard6 {
+        top: 111rem;
+        left: 3rem;
+    }
+
+    .sidebar {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rectangles .one {
+        position: absolute;
+        left: 2rem;
+        top: 8rem;
+    }
+
+    .rectangles .two {
+        position: absolute;
+        left: 10.2rem;
+        top: 8rem;
+    }
+
+    .rectangles .three {
+        position: absolute;
+        left: 2.2rem;
+        top: 14rem;
+    }
+
+    .btn {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+@media(max-width:450px) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 6rem;
+    }
+    .wcard1{
+        left: 7rem;
+    }
+
+    .wcard2 {
+        top: 77rem;
+        left: 7rem;
+    }
+
+    .cimg2 img {
+        margin-left: 0rem;
+        top: 3rem;
+    }
+
+    .wcard3 {
+        top: 91rem;
+        left: 7rem;
+    }
+
+    .cimg3 img {
+        margin-left: 0rem;
+        top: 4rem;
+    }
+
+    .wcard4 {
+        top: 109rem;
+        left: 7rem;
+    }
+
+    .wcard5 {
+        top: 123rem;
+        left: 7rem;
+    }
+
+    .wcard6 {
+        top: 136rem;
+        left: 7rem;
+    }
+}
+
+
+
+@media(max-width:300px) {
+
+    .humberger {
+        padding-right: 34rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cimg1 img{
+        margin-left: -3rem;
+    }
+
+
+    .wcard1 {
+        top: 63rem;
+        left: 4rem;
+    }
+
+    .cimg2 img {
+        margin-left: -3rem;
+        top: 3rem;
+    }
+    
+    .wcard2 {
+        top: 77rem;
+        left: 4rem;
+    }
+
+    .wcard3 {
+        top: 91rem;
+        left: 4rem;
+    }
+
+    .cimg3 img {
+        margin-left: -3rem;
+        top: 4rem;
+    }
+
+    .wcard4 {
+        top: 109rem;
+        left: 4rem;
+    }
+
+    .wcard5 {
+        top: 123rem;
+        left: 4rem;
+    }
+
+    .wcard6 {
+        top: 136rem;
+        left: 4rem;
+    }
+}
